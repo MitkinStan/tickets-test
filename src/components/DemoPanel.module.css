@@ -1,0 +1,23 @@
+.panel {
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  font-size: 14px;
+  background: #ececf2;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.seatsInput {
+  width: 80px;
+  min-height: 40px;
+  padding: 0 var(--space-2);
+  font-size: 16px;
+}

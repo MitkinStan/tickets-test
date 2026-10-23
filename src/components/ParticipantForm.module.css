@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.participant {
+  margin: 0;
+}
+
+.fields {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.nameField {
+  flex: 1;
+  min-width: 0;
+}
+
+.ageField {
+  width: 110px;
+}
+
+.removeButton {
+  margin-top: var(--space-3);
+  padding: 0;
+  font-size: 14px;
+  color: var(--color-error);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.orderError {
+  padding: var(--space-3);
+  background: var(--color-error-background);
+  border-radius: var(--radius);
+}

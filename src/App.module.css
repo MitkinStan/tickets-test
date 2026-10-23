@@ -1,0 +1,19 @@
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.header {
+  margin-bottom: var(--space-5);
+}
+
+.title {
+  margin: 0 0 var(--space-1);
+  font-size: 26px;
+}
+
+.eventInfo {
+  margin: 0;
+  color: var(--color-muted);
+}
