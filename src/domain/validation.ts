@@ -21,7 +21,7 @@ export function validateParticipant(p: Participant): ParticipantErrors {
   if (!p.name.trim()) errors.name = "Укажите имя";
   if (!p.age.trim()) errors.age = "Укажите возраст";
   else if (parseAge(p.age) === null) {
-    errors.age = "От 0 до 120";
+    errors.age = "Введите целое число от 0 до 120";
   }
 
   return errors;
@@ -65,7 +65,7 @@ export function validateOrder(order: Order): OrderErrors {
     childrenWithoutAdult(ages)
   ) {
     errors.order =
-      "Ребёнок младше 14 лет может попасть на мероприятие только вместе с участником от 18 лет в том же заказе";
+      "Ребёнка младше 14 лет можно купить только вместе с участником от 18 лет";
   }
 
   return errors;

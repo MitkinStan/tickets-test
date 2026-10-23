@@ -11,10 +11,16 @@
 
 .buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column-reverse;
   gap: var(--space-3);
 }
 
-.buttons > button {
-  flex: 1;
+@media (min-width: 480px) {
+  .buttons {
+    flex-direction: row;
+  }
+
+  .buttons > button {
+    flex: 1;
+  }
 }

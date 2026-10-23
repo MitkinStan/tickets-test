@@ -2,7 +2,7 @@
   margin-top: var(--space-5);
   padding: var(--space-4);
   font-size: 14px;
-  background: #ececf2;
+  background: var(--color-surface-sunken);
   border: 1px dashed var(--color-border);
   border-radius: var(--radius);
 }
@@ -12,12 +12,31 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
-  margin-top: var(--space-3);
+  min-height: 44px;
+  margin-top: var(--space-1);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 44px;
+}
+
+.checkbox {
+  flex-shrink: 0;
 }
 
 .seatsInput {
   width: 80px;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 var(--space-2);
   font-size: 16px;
 }

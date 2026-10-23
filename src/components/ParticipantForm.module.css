@@ -5,7 +5,20 @@
 }
 
 .participant {
+  min-width: 0;
   margin: 0;
+}
+
+.participant legend {
+  float: left;
+  width: 100%;
+  margin-bottom: var(--space-3);
+  padding: 0;
+  font-weight: 600;
+}
+
+.participant legend + * {
+  clear: both;
 }
 
 .fields {
@@ -22,17 +35,29 @@
   width: 110px;
 }
 
+.ticketHint {
+  margin: var(--space-2) 0 0;
+  font-size: var(--font-small);
+  color: var(--color-muted);
+}
+
 .removeButton {
-  margin-top: var(--space-3);
-  padding: 0;
-  font-size: 14px;
+  min-height: 44px;
+  margin-top: var(--space-1);
+  padding: 0 var(--space-2);
+  font-size: var(--font-small);
   color: var(--color-error);
   background: none;
   border: 0;
   cursor: pointer;
 }
 
+.removeButton:hover {
+  text-decoration: underline;
+}
+
 .orderError {
+  margin: 0;
   padding: var(--space-3);
   background: var(--color-error-background);
   border-radius: var(--radius);

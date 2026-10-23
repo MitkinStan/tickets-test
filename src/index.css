@@ -2,20 +2,28 @@
   --color-text: #1b1b1f;
   --color-muted: #6b6b76;
   --color-border: #d9d9e0;
+  --color-border-strong: #8a8a96;
   --color-surface: #ffffff;
+  --color-surface-sunken: #ececf2;
   --color-background: #f6f6f9;
   --color-accent: #6d3fd9;
   --color-accent-dark: #5a31b8;
+  --color-on-accent: #ffffff;
   --color-error: #c62828;
   --color-error-background: #fdecec;
   --color-success: #1b7f4b;
-  --color-warning: #b26a00;
+  --color-warning: #8f5500;
   --radius: 10px;
+  --font-small: 14px;
+  --font-base: 16px;
+  --font-large: 20px;
+  --font-title: 24px;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
   --space-4: 16px;
   --space-5: 24px;
+  --space-6: 32px;
 }
 
 *,
@@ -27,6 +35,17 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  line-height: 1.5;
   color: var(--color-text);
   background: var(--color-background);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
 }

@@ -18,7 +18,7 @@ export function DemoPanel() {
 
   return (
     <details className={styles.panel}>
-      <summary>Демо-панель (мок-сервер)</summary>
+      <summary className={styles.summary}>Демо-панель (только для показа)</summary>
 
       <label className={styles.row}>
         Свободных мест
@@ -27,11 +27,12 @@ export function DemoPanel() {
           inputMode="numeric"
           value={seatsText}
           onChange={(e) => handleSeatsChange(e.target.value)}
+          onBlur={() => setSeatsText(String(getSeatsLeft()))}
         />
       </label>
 
-      <label className={styles.row}>
-        <input type="checkbox" checked={sellOutArmed} onChange={(e) => handleSellOutChange(e.target.checked)} />
+      <label className={styles.checkboxRow}>
+        <input type="checkbox" className={styles.checkbox} checked={sellOutArmed} onChange={(e) => handleSellOutChange(e.target.checked)} />
         Места закончатся перед подтверждением
       </label>
     </details>

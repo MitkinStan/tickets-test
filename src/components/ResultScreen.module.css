@@ -5,13 +5,28 @@
   gap: var(--space-3);
 }
 
+.screen {
+  overflow-wrap: anywhere;
+}
+
+.screen p,
+.list {
+  max-width: 100%;
+}
+
 .screen p {
   margin: 0;
 }
 
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
 .title {
   margin: 0;
-  font-size: 24px;
+  font-size: var(--font-title);
 }
 
 .titleSuccess {
@@ -30,4 +45,28 @@
 .total {
   font-size: 20px;
   font-weight: 700;
+}
+
+.badge {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: var(--color-success);
+  border-radius: 50%;
+}
+
+.badge::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 8px;
+  height: 16px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.orderId {
+  font-family: ui-monospace, monospace;
 }
